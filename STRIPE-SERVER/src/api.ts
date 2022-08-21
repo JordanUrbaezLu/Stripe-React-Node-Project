@@ -1,7 +1,7 @@
 import express, { Request, Response } from "express";
 export const app = express();
 
-// Allows cross origin requests
+// This allows for cross origin requests
 import cors from "cors";
 app.use(cors({ origin: true }));
 
