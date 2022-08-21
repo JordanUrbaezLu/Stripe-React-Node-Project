@@ -9,5 +9,9 @@ app.use(express.json());
 
 app.post("/test", (req: Request, res: Response) => {
   const amount = req.body.amount;
-  res.status(200).send({ with_tax: amount * 7 });
+  if (amount !== undefined) {
+    res.status(200).send({ with_tax: amount * 7 });
+  } else {
+    res.status(404).send();
+  }
 });
