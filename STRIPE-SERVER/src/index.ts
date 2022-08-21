@@ -1,4 +1,4 @@
-// Environement Variables (Stripe API Key)
+// Environment Variables (Stripe API Key)
 import { config } from "dotenv";
 if (process.env.NODE_ENV !== "production") {
   config();
